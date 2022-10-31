@@ -1,7 +1,7 @@
 /* default grid, column, row */
 .grid {
     display: block;
-    width: 1360px;
+    width: 1440px;
     max-width: 100%;
     padding: 0;
     margin: 0 auto;
