@@ -35,6 +35,7 @@
 
 .header__link-item {
     display: inline-block;
+    position: relative;
     line-height: 36px;
     padding: 0 20px;
 }
@@ -45,9 +46,102 @@
     background-color: #5b884a;
 }
 
-.header__link-item a {
+.header__link-item > a {
     font-weight: 600;
     color: #fff;
+}
+
+/* modal */
+.modal {
+    visibility: hidden;
+    position: relative;
+}
+
+.modal::before {
+    position: absolute;
+    top: 0;
+    left: -20px;
+    content: "";
+    width: calc(100% + 20px + 20px);
+    height: 15px;
+}
+
+.btn-dropdown:hover > .modal {
+    visibility: visible;
+}
+
+.modal__overlay {
+    position: fixed;
+    inset: 60px 0 0 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/*Firefox doesn't support pseudo element has*/
+/* #modal-shop:has(.modal__overlay:hover){
+    visibility: hidden ;
+} */
+.modal__overlay:hover,
+.modal__overlay:hover + .modal__body {
+    visibility: hidden;
+}
+
+.modal__body {
+    position: absolute;
+    top: 12px;
+    left: -20px;
+    width: 256px;
+    padding: 20px 0;
+    border-radius: 10px;
+    text-align: left;
+    background-color: white;
+}
+
+.modal__body li {
+    padding: 3px 20px;
+}
+
+.modal__body:has(.category:hover) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.category a {
+    color: #333;
+}
+
+.category:hover, 
+.category li:hover  {
+    background-color: #eeecec;
+}
+
+.category:has(.subcategory li:hover) {
+    background-color: transparent;
+}
+
+.subcategory{
+    visibility: hidden;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    bottom: 0;
+    width: 256px;
+    height: fit-content;
+    padding-bottom: 10px;
+    outline: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #fff;
+}
+
+.subcategory__heading{
+    margin: 12px 20px 13px 20px;
+    border-bottom: 1px solid #ccc;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.category:hover > .subcategory {
+    visibility: visible;
 }
 
 /* header search */

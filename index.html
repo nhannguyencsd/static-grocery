@@ -26,11 +26,186 @@
                     <span class="brand__tagline ml-2">grocify</span>
                 </a>
                 <ul class="header__link text-center ">
-                    <li class="header__link-item">
-                        <a href="#!">
-                            Shop
+                    <li class="header__link-item btn-dropdown" id="js-shop">
+                        <a href="#shop">
+                            <span class="header__link-item-shop">Shop</span>
                             <svg class="ml-2"xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 16 16"><path fill="#fff" d="M1.65 4.24C1.232 3.882.6 3.93.24 4.35c-.359.419-.31 1.05.11 1.41l7 6c.374.32.926.32 1.3 0l7-6c.42-.36.469-.991.11-1.41-.36-.42-.992-.469-1.41-.11L8 9.684 1.65 4.24z"></path></svg>
                         </a>
+                        <ul class="modal">
+                            <div class="modal__overlay">
+                            </div>
+                            <div class="modal__body" id="js-shop-body">
+                                <li class="category js-shop-category">
+                                    <a href="">Fruit & Vegetables </a>
+                                    <span class="float-right">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12px" height="12px" viewBox="0 0 256 256" id="Flat">
+                                            <path fill="#333" d="M96,220a12,12,0,0,1-8.48535-20.48535L159.0293,128,87.51465,56.48535a12.0001,12.0001,0,0,1,16.9707-16.9707l80,80a12.00062,12.00062,0,0,1,0,16.9707l-80,80A11.96287,11.96287,0,0,1,96,220Z"/>
+                                        </svg>
+                                    </span>
+                                    <ul class="subcategory js-shop-subcategory">
+                                        <h4 class="subcategory__heading">Fruit & Vegetables</h4>
+                                        <li><a href="">Fruit</a></li>
+                                        <li><a href="">Vegetables</a></li>
+                                    </ul>
+                                </li>
+                                <li class="category js-shop-category">
+                                    <a href="">Meat & Seafood</a>
+                                    <span class="float-right">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12px" height="12px" viewBox="0 0 256 256" id="Flat">
+                                            <path fill="#333" d="M96,220a12,12,0,0,1-8.48535-20.48535L159.0293,128,87.51465,56.48535a12.0001,12.0001,0,0,1,16.9707-16.9707l80,80a12.00062,12.00062,0,0,1,0,16.9707l-80,80A11.96287,11.96287,0,0,1,96,220Z"/>
+                                        </svg>
+                                    </span>
+                                    <ul class="subcategory js-shop-subcategory">
+                                        <h4 class="subcategory__heading">Meat & Seafood</h4>
+                                        <li><a href="">Meat</a></li>
+                                        <li><a href="">Seafood</a></li>
+                                        <li><a href="">Meat Alternatives</a></li>
+                                    </ul>
+                                </li>
+                                <li class="category js-shop-category">
+                                    <a href="">Bakery & Bread</a>
+                                    <span class="float-right">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12px" height="12px" viewBox="0 0 256 256" id="Flat">
+                                            <path fill="#333" d="M96,220a12,12,0,0,1-8.48535-20.48535L159.0293,128,87.51465,56.48535a12.0001,12.0001,0,0,1,16.9707-16.9707l80,80a12.00062,12.00062,0,0,1,0,16.9707l-80,80A11.96287,11.96287,0,0,1,96,220Z"/>
+                                        </svg>
+                                    </span>
+                                    <ul class="subcategory js-shop-subcategory">
+                                        <h4 class="subcategory__heading">Bakery & Bread</h4>
+                                        <li><a href="">Bread</a></li>
+                                        <li><a href="">Breading & Crumbs</a></li>
+                                        <li><a href="">Cookies</a></li>
+                                        <li><a href="">Desserts & Pastries</a></li>
+                                        <li><a href="">Tortillas</a></li>
+                                        <li><a href="">Cakes</a></li>
+                                    </ul>
+                                </li>
+                                <li class="category js-shop-category">
+                                    <a href="">Dairy & Eggs</a>
+                                    <span class="float-right">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12px" height="12px" viewBox="0 0 256 256" id="Flat">
+                                            <path fill="#333" d="M96,220a12,12,0,0,1-8.48535-20.48535L159.0293,128,87.51465,56.48535a12.0001,12.0001,0,0,1,16.9707-16.9707l80,80a12.00062,12.00062,0,0,1,0,16.9707l-80,80A11.96287,11.96287,0,0,1,96,220Z"/>
+                                        </svg>
+                                    </span>
+                                    <ul class="subcategory js-shop-subcategory">
+                                        <h4 class="subcategory__heading">Dairy & Eggs</h4>
+                                        <li><a href="">Biscuit & Cookie Dought</a></li>
+                                        <li><a href="">Butter & Margarine</a></li>
+                                        <li><a href="">Cheese</a></li>
+                                        <li><a href="">Cottage Cheese</a></li>
+                                        <li><a href="">Cream</a></li>
+                                        <li><a href="">Eggs & Egg Substitutes</a></li>
+                                        <li><a href="">Milk</a></li>
+                                        <li><a href="">Pudding & Gelatin</a></li>
+                                        <li><a href="">Sour Cream</a></li>
+                                        <li><a href="">Yogurt</a></li>
+                                    </ul>
+                                </li>
+                                <li class="category js-shop-category">
+                                    <a href="">Deli & Prepare Food</a>
+                                    <span class="float-right">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12px" height="12px" viewBox="0 0 256 256" id="Flat">
+                                            <path fill="#333" d="M96,220a12,12,0,0,1-8.48535-20.48535L159.0293,128,87.51465,56.48535a12.0001,12.0001,0,0,1,16.9707-16.9707l80,80a12.00062,12.00062,0,0,1,0,16.9707l-80,80A11.96287,11.96287,0,0,1,96,220Z"/>
+                                        </svg>
+                                    </span>
+                                    <ul class="subcategory js-shop-subcategory">
+                                        <h4 class="subcategory__heading">Deli & Prepare Food</h4>
+                                        <li><a href="">Cheese</a></li>
+                                        <li><a href="">Dip</a></li>
+                                        <li><a href="">Meat</a></li>
+                                        <li><a href="">Ready Meal & Snacks</a></li>
+                                        <li><a href="">Party Trays</a></li>
+                                    </ul>
+                                </li>
+                                <li class="category js-shop-category">
+                                    <a href="">Frozen Food</a>
+                                    <span class="float-right">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12px" height="12px" viewBox="0 0 256 256" id="Flat">
+                                            <path fill="#333" d="M96,220a12,12,0,0,1-8.48535-20.48535L159.0293,128,87.51465,56.48535a12.0001,12.0001,0,0,1,16.9707-16.9707l80,80a12.00062,12.00062,0,0,1,0,16.9707l-80,80A11.96287,11.96287,0,0,1,96,220Z"/>
+                                        </svg>
+                                    </span>
+                                    <ul class="subcategory js-shop-subcategory">
+                                        <h4 class="subcategory__heading">Frozen Food</h4>
+                                        <li><a href="">Bread & Baked Goods</a></li>
+                                        <li><a href="">Fruit</a></li>
+                                        <li><a href="">Ice Crean & Treats</a></li>
+                                        <li><a href="">Juice & Smoothies</a></li>
+                                        <li><a href="">Meals & Slides</a></li>
+                                        <li><a href="">Meat & Meat Alternatives</a></li>
+                                        <li><a href="">Seafood</a></li>
+                                        <li><a href="">Vegetables</a></li>
+                                    </ul>
+                                </li>
+                                <li class="category js-shop-category">
+                                    <a href="">Beverages</a>
+                                    <span class="float-right">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12px" height="12px" viewBox="0 0 256 256" id="Flat">
+                                            <path fill="#333" d="M96,220a12,12,0,0,1-8.48535-20.48535L159.0293,128,87.51465,56.48535a12.0001,12.0001,0,0,1,16.9707-16.9707l80,80a12.00062,12.00062,0,0,1,0,16.9707l-80,80A11.96287,11.96287,0,0,1,96,220Z"/>
+                                        </svg>
+                                    </span>
+                                    <ul class="subcategory js-shop-subcategory">
+                                        <h4 class="subcategory__heading">Beverages</h4>
+                                        <li><a href="">Beer & Wine</a></li>
+                                        <li><a href="">Coffee</a></li>
+                                        <li><a href="">Ice</a></li>
+                                        <li><a href="">Juice</a></li>
+                                        <li><a href="">Mix & Flavor Enhancers</a></li>
+                                        <li><a href="">Shakes & Smoothies</a></li>
+                                        <li><a href="">Sport & Energy Drinks</a></li>
+                                        <li><a href="">Soda</a></li>
+                                        <li><a href="">Tea</a></li>
+                                        <li><a href="">Water</a></li>
+                                    </ul>
+                                </li>
+                                <li class="category js-shop-category">
+                                    <a href="">Pantry</a>
+                                    <span class="float-right">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12px" height="12px" viewBox="0 0 256 256" id="Flat">
+                                            <path fill="#333" d="M96,220a12,12,0,0,1-8.48535-20.48535L159.0293,128,87.51465,56.48535a12.0001,12.0001,0,0,1,16.9707-16.9707l80,80a12.00062,12.00062,0,0,1,0,16.9707l-80,80A11.96287,11.96287,0,0,1,96,220Z"/>
+                                        </svg>
+                                    </span>
+                                    <ul class="subcategory js-shop-subcategory">
+                                        <h4 class="subcategory__heading">Pantry</h4>
+                                        <li><a href="">Baking Ingredients</a></li>
+                                        <li><a href="">Broth & Boulion</a></li>
+                                        <li><a href="">Canned & Dried Food</a></li>
+                                        <li><a href="">Cereal & Breakfast</a></li>
+                                        <li><a href="">Condiments</a></li>
+                                        <li><a href="">Dressing, Oil & Vinegar</a></li>
+                                        <li><a href="">Jelly & Jam</a></li>
+                                        <li><a href="">Pantry Meals</a></li>
+                                        <li><a href="">Pasta & Rice</a></li>
+                                        <li><a href="">Peanut Butter</a></li>
+                                        <li><a href="">Salsa & Dip</a></li>
+                                        <li><a href="">Sauces & Marinades</a></li>
+                                        <li><a href="">Snacks & Candy</a></li>
+                                        <li><a href="">Soups & Chili</a></li>
+                                        <li><a href="">Spices & Seasoning</a></li>
+                                        <li><a href="">Sugar & Sweeteners</a></li>
+                                    </ul>
+                                </li>
+                                <li class="category js-shop-category">
+                                    <a href="">Everyday Essentials</a>
+                                    <span class="float-right">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12px" height="12px" viewBox="0 0 256 256" id="Flat">
+                                            <path fill="#333" d="M96,220a12,12,0,0,1-8.48535-20.48535L159.0293,128,87.51465,56.48535a12.0001,12.0001,0,0,1,16.9707-16.9707l80,80a12.00062,12.00062,0,0,1,0,16.9707l-80,80A11.96287,11.96287,0,0,1,96,220Z"/>
+                                        </svg>
+                                    </span>
+                                    <ul class="subcategory js-shop-subcategory">
+                                        <h4 class="subcategory__heading">Everyday Essentials</h4>
+                                        <li><a href="">Air Fresheners & Candles</a></li>
+                                        <li><a href="">Batteries</a></li>
+                                        <li><a href="">Cleaners</a></li>
+                                        <li><a href="">Cleaning Tools</a></li>
+                                        <li><a href="">Disposable Kitchenware</a></li>
+                                        <li><a href="">Facial Tissue</a></li>
+                                        <li><a href="">Food Storage & Wraps</a></li>
+                                        <li><a href="">Laundry</a></li>
+                                        <li><a href="">Paper Towels</a></li>
+                                        <li><a href="">Trash Bags</a></li>
+                                    </ul>
+                                </li>
+                            </div>
+                        </ul>
                     </li>
                     <li class="header__link-item">
                         <a href="#!">
