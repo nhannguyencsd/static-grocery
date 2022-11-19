@@ -1,11 +1,17 @@
-//shop menu variables
+//shop, services menu variables
 const shopBtn = document.querySelector('#js-shop');
 const shopBody = document.querySelector('#js-shop-body');
 const shopCategories = document.querySelectorAll('.js-shop-category');
 const shopSubcategories = document.querySelectorAll('.js-shop-subcategory');
 const initialShopBodyHeight = shopBody.clientHeight;
 
-// events for shop menu
+const servicesBtn = document.querySelector('#js-services');
+const servicesBody = document.querySelector('#js-services-body');
+const servicesCategories = document.querySelectorAll('.js-services-category');
+const servicesSubcategories = document.querySelectorAll('.js-services-subcategory');
+const initialServicesBodyHeight = servicesBody.clientHeight;
+
+// events for shop, services menu
 function btnEvent() {
     this.btn.addEventListener('mouseover', () => {
         this.body.style.height = this.initialBodyHeight + 'px';
@@ -22,7 +28,7 @@ function categoriesEvent() {
     });
 }
 
-//define shop menu
+//define shop, services menu
 const shopMenu = {
     btn: shopBtn,
     body: shopBody,
@@ -33,6 +39,18 @@ const shopMenu = {
     categoriesEvent,
 };
 
+const servicesMenu = {
+    btn: servicesBtn,
+    body: servicesBody,
+    initialBodyHeight: initialServicesBodyHeight,
+    categories: servicesCategories,
+    subcategories: servicesSubcategories,
+    btnEvent,
+    categoriesEvent,
+};
+
 // event listeners for shop dropdown menu
 shopMenu.btnEvent();
 shopMenu.categoriesEvent();
+servicesMenu.btnEvent();
+servicesMenu.categoriesEvent();
