@@ -1,4 +1,4 @@
-//shop, services menu variables
+//shop, services, deals menu variables
 const shopBtn = document.querySelector('#js-shop');
 const shopBody = document.querySelector('#js-shop-body');
 const shopCategories = document.querySelectorAll('.js-shop-category');
@@ -10,6 +10,12 @@ const servicesBody = document.querySelector('#js-services-body');
 const servicesCategories = document.querySelectorAll('.js-services-category');
 const servicesSubcategories = document.querySelectorAll('.js-services-subcategory');
 const initialServicesBodyHeight = servicesBody.clientHeight;
+
+const dealsBtn = document.querySelector('#js-deals');
+const dealsBody = document.querySelector('#js-deals-body');
+const dealsCategories = document.querySelectorAll('.js-deals-category');
+const dealsSubcategories = document.querySelectorAll('.js-deals-subcategory');
+const initialDealsBodyHeight = dealsBody.clientHeight;
 
 // events for shop, services menu
 function btnEvent() {
@@ -28,7 +34,7 @@ function categoriesEvent() {
     });
 }
 
-//define shop, services menu
+//define shop, services, deals menu
 const shopMenu = {
     btn: shopBtn,
     body: shopBody,
@@ -49,8 +55,20 @@ const servicesMenu = {
     categoriesEvent,
 };
 
+const dealsMenu = {
+    btn: dealsBtn,
+    body: dealsBody,
+    initialBodyHeight: initialDealsBodyHeight,
+    categories: dealsCategories,
+    subcategories: dealsSubcategories,
+    btnEvent,
+    categoriesEvent,
+};
+
 // event listeners for shop dropdown menu
 shopMenu.btnEvent();
 shopMenu.categoriesEvent();
 servicesMenu.btnEvent();
 servicesMenu.categoriesEvent();
+dealsMenu.btnEvent();
+dealsMenu.categoriesEvent();
