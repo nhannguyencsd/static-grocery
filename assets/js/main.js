@@ -19,14 +19,15 @@ const initialDealsBodyHeight = dealsBody.clientHeight;
 
 // events for shop, services menu
 function btnEvent() {
-    this.btn.addEventListener('mouseover', () => {
+    this.btn.addEventListener('mouseenter', () => {
         this.body.style.height = this.initialBodyHeight + 'px';
     });
 }
 
 function categoriesEvent() {
     this.categories.forEach((category, index) => {
-        category.addEventListener('mousemove', () => {
+        category.addEventListener('mouseover', () => {
+            this.body.style.height = this.initialBodyHeight + 'px';
             if (this.initialBodyHeight < this.subcategories[index].clientHeight)
                 this.body.style.height = this.subcategories[index].clientHeight + 'px';
             else this.subcategories[index].style.height = this.initialBodyHeight + 'px';
