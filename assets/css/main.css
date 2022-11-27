@@ -40,6 +40,15 @@
     padding: 0 20px;
 }
 
+.header__link-item::before {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    content: "";
+    width: calc(100% + 5px);
+    height: 60px;
+}
+
 .header__link-item:hover {
     border-radius: 10px;
     cursor: pointer;
@@ -80,9 +89,22 @@
 /* #modal-shop:has(.modal__overlay:hover){
     visibility: hidden ;
 } */
+
+@keyframes fadeOut {
+    0% {
+      visibility: visible;
+      opacity: 0.4;
+    }
+    100% {
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+
 .modal__overlay:hover,
 .modal__overlay:hover + .modal__body {
     visibility: hidden;
+    animation: fadeOut 0.1s ease;
 }
 
 .modal__body {
