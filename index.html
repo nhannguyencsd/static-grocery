@@ -16,6 +16,7 @@
     <header class="header">
         <div class="grid">
             <div class="header-content">
+                <!-- brand -->
                 <a class="brand" href="">
                     <svg fill="#ffb800" xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24">
                         <g>
@@ -25,6 +26,7 @@
                     </svg> 
                     <span class="brand__tagline ml-2">grocify</span>
                 </a>
+                <!-- left link -->
                 <ul class="header__link text-center ">
                     <li class="header__link-item btn-dropdown" id="js-shop">
                         <a href="#shop">
@@ -372,12 +374,14 @@
                         </ul>
                     </li>
                 </ul>
+                <!-- search -->
                 <form class="header__search" action="">
                     <input type="text" placeholder="Search" required oninvalid="this.setCustomValidity('Please enter a product')">
                     <button type="submit">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
                 </form>
+                <!-- right link -->
                 <ul class="header__link text-center">
                     <li class="header__link-item">
                         <a href="#!">
@@ -388,11 +392,41 @@
                             </span>
                         </a>
                     </li>
-                    <li class="header__link-item">
-                        <a href="#!">
+                    <li class="header__link-item btn-dropdown header__cart">
+                        <a class="header__cart-link"href="#!">
                             <i class="fa-solid fa-cart-shopping"></i>
                             <span class="ml-2">Cart</span>
+                            <span class="header__cart-badge">2</span>
                         </a>
+                        <div class="header__cart-modal">
+                            <div class="header__cart-overlay">
+                            </div>
+                            <ul class="header__cart-body">
+                                <div class="header__cart-body-heading">
+                                    ITEMS ADDED
+                                </div>
+                                <li class="cart-item">
+                                    <img src="./assets/images/header/banana.jpg" alt="">
+                                    <span class="cart-item__name">Fresh bunch of bananas</span>
+                                    <span class="cart-item__price">$1.39</span>
+                                    <span class="cart-item__multiply">x</span>
+                                    <span class="cart-item__qty">1</span>
+                                </li>
+                                <li class="cart-item">
+                                    <img src="./assets/images/header/beef.PNG" alt="">
+                                    <span class="cart-item__name">Natural Beef Boneless</span>
+                                    <span class="cart-item__price">$18.65</span>
+                                    <span class="cart-item__multiply">x</span>
+                                    <span class="cart-item__qty">2</span>
+                                </li>
+                                <div class="cart-item__checkout">
+                                    <span class="cart-item__total">
+                                        $38.69
+                                    </span>
+                                    <a class="cart-item__checkout-btn"href="#">Checkout</a>
+                                </div>
+                            </ul>
+                        </div>
                     </li>
                 </ul>
             </div>
