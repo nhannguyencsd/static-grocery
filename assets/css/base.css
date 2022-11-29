@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
-/* reset css */
+/* base css */
+
+:root {
+    --color-primary: #37b140;
+    --color-secondary: #fff;
+    --color-overlay: rgba(0, 0, 0, 0.4);
+
+    --header-height: 60px;
+}
+
 *,
 *::before,
 *::after {
