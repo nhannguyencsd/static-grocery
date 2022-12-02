@@ -4,6 +4,7 @@
 :root {
     --color-primary: #37b140;
     --color-secondary: #fff;
+    --color-tertiary: #309b38;
     --color-overlay: rgba(0, 0, 0, 0.4);
 
     --header-height: 60px;

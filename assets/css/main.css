@@ -195,6 +195,91 @@
     background-color: transparent;
 }
 
+/* header signin */
+.modal__body--account {
+    position: absolute;
+    top: 12px ;
+    right: -138px;
+    width: 340px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    cursor: default;
+    background-color: var(--color-secondary);
+}
+
+.modal__overlay:hover,
+.modal__overlay:hover + .modal__body--account {
+    visibility: hidden;
+    animation: fadeOut 0.1s ease;
+}
+
+.account-glance {
+    padding: 20px;
+}
+
+.account-glance p {
+    font-size: 1.4rem;
+    line-height: 1.4;
+}
+
+.account-glance__btn {
+    display: block;
+    width: 230px;
+    padding: 6px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    color: var(--color-secondary);
+    background-color: var(--color-primary);
+}
+
+.account-glance__btn:hover {
+    background-color: var(--color-tertiary);
+}
+
+.account-glance__btn + .account-glance__btn {
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+    background-color: var(--color-secondary);
+}
+
+.account-glance__btn + .account-glance__btn:hover {
+    transition: 0.3s;
+    color: var(--color-secondary);
+    background-color: var(--color-tertiary);
+}
+
+.account-menu {
+    border-top: 12px solid #f0f2f4;
+}
+
+.account-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.account-item:hover {
+    cursor: pointer;
+    background-color: #eeecec;
+}
+
+.account-item__heading a {
+    color: #000;
+}
+
+.account-item__desc {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #777;
+}
+
 /* header cart */
 .header__cart {
     position: relative;
@@ -221,12 +306,17 @@
     position: absolute;
     top: 12px ;
     right: -20px;
-    content: "";
     width: 380px;
     padding: 20px ;
     border-radius: 10px;
     cursor: default;
     background-color: var(--color-secondary);
+}
+
+.modal__overlay:hover,
+.modal__overlay:hover + .modal__body--cart {
+    visibility: hidden;
+    animation: fadeOut 0.1s ease;
 }
 
 .header__cart-body-heading {
@@ -303,7 +393,7 @@
 }
 
 .cart-item__checkout-btn:hover {
-    background-color: #3dc446;
+    background-color: var(--color-tertiary);
 }
 
 /* main part */
